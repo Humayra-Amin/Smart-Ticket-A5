@@ -1,6 +1,7 @@
 function getTextElementValueById(elementId) {
     const element = document.getElementById(elementId);
     const value = parseInt(element.innerText);
+    return value;
 }
 
 function getInputTextById(elementId) {

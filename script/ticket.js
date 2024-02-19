@@ -4,7 +4,6 @@ const seatTaken = document.getElementById('seat-taken');
 const applyBtn = document.getElementById('apply-btn');
 let seatSelect = 0;
 let isSelected = false;
-let isTyped = false;
 let totalPriceUpdate = 0;
 
 
@@ -22,14 +21,18 @@ for (const seats of singleSeat) {
             setTextElementValueById('seats-left', seatUpdate);
 
             const ticketPrice = getTextElementValueById('ticket-price');
-            const p1 = document.createElement('p');
+
+            const para = document.createElement('p');
             const text = seats.innerText;
             para.innerText = text;
-            const p2 = document.createElement('p');
+
+            const para2 = document.createElement('p');
             para2.innerText = 'Economy';
-            const p3 = document.createElement('p');
-            para2.innerText = ticketPrice;
-            seatTaken.append(p1, p2, p3);
+
+            const para3 = document.createElement('p');
+            para3.innerText = ticketPrice;
+
+            seatTaken.append(para, para2, para3);
 
             
             totalPriceUpdate = seatSelect * ticketPrice;
@@ -49,7 +52,7 @@ for (const seats of singleSeat) {
             }
         }
         else {
-            alert('Cannot select more');
+            alert('Cannot select more than 4 seats');
         }
     })
 }
@@ -83,12 +86,6 @@ applyBtn.addEventListener('click', function () {
     }
 })
 
-function check(){
-
-    isTyped = true;
-}
-function next(){
-    if(isSelected === true && isTyped === true){
-
-    }
+function next() {
+    
 }
