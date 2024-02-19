@@ -60,7 +60,7 @@
             </ul>
         </div>
         <div class="navbar-end">
-            <a class="btn text-[#1DD100] w-24 lg:w-32 lg:text-xl">Bus <img src="images/bus-icon.png" alt=""></a>
+            <a onclick="" class="btn text-[#1DD100] w-24 lg:w-32 lg:text-xl">Bus <img src="images/bus-icon.png" alt=""></a>
         </div>
     </div>
     <!-- banner section -->
@@ -126,7 +126,7 @@
                     </div>
                     <img src="images/cupon-devider.png" alt="" class="lg:h-[220px] lg:w-[48px]">
                     <div class="card-body font-raleway">
-                        <h1 class="text-xl lg:text-3xl font-bold">NEW15</h1>
+                        <h1 id="new15" class="text-xl lg:text-3xl font-bold">NEW15</h1>
                         <p class="text-black">Coupon Code</p>
                     </div>
                 </div>
@@ -140,7 +140,7 @@
                     </div>
                     <img src="images/cupon-devider.png" alt="" class="ml-6 lg:ml-0 lg:h-[220px] lg:w-[48px]">
                     <div class="card-body font-raleway">
-                        <h1 class="text-xl lg:text-3xl font-bold">Couple 20</h1>
+                        <h1 id="couple20" class="text-xl lg:text-3xl font-bold">Couple 20</h1>
                         <p class=" text-black">Coupon Code</p>
                     </div>
                 </div>
@@ -154,7 +154,7 @@
         </section>
 
         <!-- seat booking -->
-        <section
+        <section id="book-container"
             class="seat-booking-container mt-16 lg:mt-40 h-[1600px] bg-[#F7F8F8] border-t-2 border-[#1DD100] rounded-t-[88px]">
             <h1 class="text-center text-3xl lg:text-4xl lg:mt-20 font-raleway font-bold">P.H Paribahan</h1>
             <p class="text-center lg:text-xl lg:mt-6 font-inter text-[#03071299]">Book your desired seats for
@@ -173,7 +173,7 @@
                         <div
                             class="flex flex-col lg:flex-row items-center border-0 bg-[#1dd10026] w-max rounded-xl p-2 gap-2 lg:ml-36">
                             <img src="images/seat-green.png" alt="">
-                            <p class="text-[#1DD100] text-[18px]">40 Seats left</p>
+                            <p id="seats-left" class="text-[#1DD100] text-[18px]">40 Seats left</p>
                         </div>
                     </div>
 
@@ -205,7 +205,7 @@
 
                 <div class="flex flex-col text-center items-center justify-center ml-10">
                     <img src="images/fare.png" alt="">
-                    <p class="font-raleway text-3xl font-bold">550 Taka</p>
+                    <p id="ticket-price" class="font-raleway text-3xl font-bold">550 Taka</p>
                     <p class="font-raleway text-2xl text-[#03071299]">Per Seat</p>
                 </div>
 
@@ -228,7 +228,7 @@
                     </div>
                     <hr class="border-dashed border mt-4">
 
-                    <div class="seat-plan grid grid-cols-6 justify-center text-center gap-2">
+                    <div id="seatsList" class="seat-plan grid grid-cols-6 justify-center text-center gap-2">
                         <p></p>
                         <p></p>
                         <p></p>
@@ -239,83 +239,83 @@
 
                         <!-- row1 -->
                         <p class="mt-4 p-2 text-base">A</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">A1</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">A2</p>
-                        <p></p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">A3</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">A4</p>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">A1</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">A2</button>
+                        <button></button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">A3</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">A4</button>
 
                         <!-- row2 -->
                         <p class="mt-4 p-2 text-base">B</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">B1</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">B2</p>
-                        <p></p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">B3</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">B4</p>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">B1</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">B2</button>
+                        <button></button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">B3</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">B4</button>
 
                         <!-- row3 -->
                         <p class="mt-4 p-2 text-base">C</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">C1</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">C2</p>
-                        <p></p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">C3</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">C4</p>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">C1</button>
+                        <button class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">C2</button>
+                        <button></button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">C3</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">C4</button>
 
                         <!-- row4 -->
                         <p class="mt-4 p-2 text-base">D</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">D1</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">D2</p>
-                        <p></p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">D3</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">D4</p>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">D1</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">D2</button>
+                        <button></button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">D3</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">D4</button>
 
                         <!-- row5 -->
                         <p class="mt-4 p-2 text-base">E</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">E1</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">E2</p>
-                        <p></p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">E3</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">E4</p>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">E1</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">E2</button>
+                        <button></button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">E3</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">E4</button>
 
                         <!-- row6 -->
                         <p class="mt-4 p-2 text-base">F</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">F1</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">F2</p>
-                        <p></p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">F3</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">F4</p>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">F1</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">F2</button>
+                        <button></button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">F3</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">F4</button>
 
                         <!-- row7 -->
                         <p class="mt-4 p-2 text-base">G</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">G1</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">G2</p>
-                        <p></p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">G3</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">G4</p>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">G1</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">G2</button>
+                        <button></button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">G3</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">G4</button>
 
                         <!-- row8 -->
                         <p class="mt-4 p-2 text-base">H</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">H1</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">H2</p>
-                        <p></p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">H3</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">H4</p>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">H1</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">H2</button>
+                        <button></button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">H3</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">H4</button>
 
                         <!-- row9 -->
                         <p class="mt-4 p-2 text-base">I</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">I1</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">I2</p>
-                        <p></p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">I3</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">I4</p>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">I1</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">I2</button>
+                        <button></button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">I3</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">I4</button>
 
                         <!-- row10 -->
                         <p class="mt-4 p-2 text-base">J</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">J1</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">J2</p>
-                        <p></p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">J3</p>
-                        <p class="bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base">J4</p>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">J1</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">J2</button>
+                        <button></button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">J3</button>
+                        <button class="btn bg-[#F7F8F8] mt-4 p-2 rounded-lg cursor-pointer text-base single-seat">J4</button>
 
                     </div>
 
@@ -328,43 +328,46 @@
                         <h1 class="text-[#030712] text-2xl font-raleway font-medium">Select Your Seat</h1>
                         <hr class="border-dashed border mt-4">
                     </div>
-
-                    <div class="bg-[#F7F8F8] w-[533px] h-[350px] rounded-lg">
+                    <!-- 533w -->
+                    <div class="bg-[#F7F8F8] w-auto h-[350px] rounded-lg"> 
                         <div class="mt-4 flex justify-between p-4 font-inter text-base ">
-                            <p>Seat <span class="border bg-[#1DD100] px-2 rounded-xl text-white text-base">0</span></p>
+                            <p>Seat <span id="booked-seat"
+                                    class="border bg-[#1DD100] px-2 rounded-xl text-white text-base">0</span></p>
                             <p>Class</p>
                             <p>Price</p>
                         </div>
                         <hr class="border-dashed border w-[500px] ml-4">
 
                         <div>
-                            <div class="font-inter text-base mt-2 flex justify-between p-4 text-[#03071299]">
-                                <p>C2</p>
-                                <p>Economy</p>
-                                <p>550</p>
-                            </div>
+                            <div id="seat-taken" class="font-inter text-base mt-2 flex justify-between p-4 text-[#03071299]">
+                                <!-- <div class="font-inter text-base mt-2 flex justify-between p-4 text-[#03071299]">
+                                    <p>C2</p>
+                                    <p>Economy</p>
+                                    <p>550</p>
+                                </div>
 
-                            <div class="font-inter text-base flex justify-between p-4 text-[#03071299]">
-                                <p>C2</p>
-                                <p>Economy</p>
-                                <p>550</p>
+                                <div class="font-inter text-base flex justify-between p-4 text-[#03071299]">
+                                    <p>C2</p>
+                                    <p>Economy</p>
+                                    <p>550</p>
+                                </div> -->
                             </div>
                             <hr class="border w-[500px] ml-4">
                             <div class="font-inter text-base flex justify-between p-4 text-[#030712]">
                                 <p>Total Price</p>
-                                <p>BDT <span>0</span></p>
+                                <p>BDT <span id="total-price">0</span></p>
                             </div>
 
-                            <div class="ml-4 relative">
-                                <input type="text" name="" id="" placeholder="Have any Coupon?"
+                            <div id="coupon-apply" class="ml-4 relative">
+                                <input type="text" name="" id="insert-coupon" placeholder="Have any Coupon?"
                                     class="p-5 w-[500px] h-[56px] rounded-xl">
-                                <button
+                                <button id="apply-btn" disabled
                                     class="btn bg-[#1DD100] absolute text-white font-inter lg:text-[16px] right-6 bottom-1">Apply</button>
                             </div>
 
                             <div class="font-inter text-base flex justify-between p-4 text-[#030712]">
                                 <p>Grand Total</p>
-                                <p>BDT <span>0</span></p>
+                                <p>BDT <span id="grand-total">0</span></p>
                             </div>
 
                         </div>
@@ -388,8 +391,8 @@
                                 <span class="label-text font-inter text-[#030712] font-bold text-base">Phone
                                     Number*</span>
                             </div>
-                            <input type="text" placeholder="Enter your phone number"
-                                class="input input-bordered text-[#03071266] font-inter" />
+                            <input type="text" placeholder="Enter your phone number" id="check" onchange="check()"
+                                class="input input-bordered text-[#03071266] font-inter" required/>
                         </label>
 
                         <label class="form-control mt-2">
@@ -400,7 +403,7 @@
                                 class="input input-bordered text-[#03071266] font-inter" />
                         </label>
 
-                        <button onclick="my_modal_1.showModal()"
+                        <button onclick="my_modal_1.showModal()" id="next"
                             class="btn bg-[#1DD100] mb-5 mt-4 w-[533px] text-white font-raleway font-bold lg:text-xl border-0 lg:px-8 rounded-xl">Next</button>
 
                         <!-- Success modal -->
@@ -410,15 +413,18 @@
                                     <div class="flex flex-col justify-center items-center mt-20">
                                         <img src="images/success.png" alt="">
                                         <h3 class="font-bold text-lg text-[#27AE60] mt-4">SUCCESS</h3>
-                                        <p class="py-4 text-center text-[#4A4A4A] text-[18px] font-medium">Thank you for Booking Our
+                                        <p class="py-4 text-center text-[#4A4A4A] text-[18px] font-medium">Thank you for
+                                            Booking Our
                                             Bus Seats. <br>We are working hard to find the best service and deals.</p>
-                                            <p class="py-4 text-center text-[#4A4A4A] text-[18px]">Shortly you will find a confirmation in your email.</p>
+                                        <p class="py-4 text-center text-[#4A4A4A] text-[18px]">Shortly you will find a
+                                            confirmation in your email.</p>
                                     </div>
 
                                     <div class="modal-action">
                                         <form method="dialog">
                                             <!-- if there is a button in form, it will close the modal -->
-                                            <button class="btn mb-24 bg-[#27AE60] text-white rounded-3xl w-[300px]">Continue</button>
+                                            <button
+                                                class="btn mb-24 bg-[#27AE60] text-white rounded-3xl w-[300px]">Continue</button>
                                         </form>
                                     </div>
 
@@ -480,6 +486,8 @@
         </div>
     </footer>
 
+    <script src="script/ticket.js"></script>
+    <script src="script/utility.js"></script>
 </body>
 
 </html>
