@@ -20,6 +20,9 @@ for (const seats of singleSeat) {
             const seatUpdate = seatsLeft - 1;
             setTextElementValueById('seats-left', seatUpdate);
 
+            const div = document.createElement('div');
+            div.classList.add('font-inter', 'text-base', 'flex', 'justify-between', 'p-4', 'text-[#03071299]');
+
             const ticketPrice = getTextElementValueById('ticket-price');
 
             const para = document.createElement('p');
@@ -32,7 +35,8 @@ for (const seats of singleSeat) {
             const para3 = document.createElement('p');
             para3.innerText = ticketPrice;
 
-            seatTaken.append(para, para2, para3);
+            div.append(para, para2, para3);
+            seatTaken.appendChild(div);
 
             
             totalPriceUpdate = seatSelect * ticketPrice;
