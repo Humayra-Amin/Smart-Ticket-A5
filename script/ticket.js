@@ -12,10 +12,8 @@ for (const seats of singleSeat) {
     seats.addEventListener('click', function () {
         
         if (seatSelect < 4) {
-            seats.classList.add('colorChanged')
-            seats.classList.remove('bg-[#F7F8F8]')
             seats.classList.add('bg-[#1DD100]')
-            seats.setAttribute('disabled', '')
+            seats.classList.remove('bg-[#F7F8F8]')
             seatSelect = seatSelect + 1;
             setTextElementValueById('booked-seat', seatSelect);
 
@@ -24,14 +22,14 @@ for (const seats of singleSeat) {
             setTextElementValueById('seats-left', seatUpdate);
 
             const ticketPrice = getTextElementValueById('ticket-price');
-            const para = document.createElement('p');
+            const p1 = document.createElement('p');
             const text = seats.innerText;
             para.innerText = text;
-            const para2 = document.createElement('p');
+            const p2 = document.createElement('p');
             para2.innerText = 'Economy';
-            const para3 = document.createElement('p');
+            const p3 = document.createElement('p');
             para2.innerText = ticketPrice;
-            seatTaken.append(para, para2, para3);
+            seatTaken.append(p1, p2, p3);
 
             
             totalPriceUpdate = seatSelect * ticketPrice;
